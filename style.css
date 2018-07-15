@@ -1,0 +1,199 @@
+html{color:#333333;background:#FFF;font-family: PingFangSC-Medium;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;box-sizing: border-box;}
+table{border-collapse:collapse;border-spacing:0}
+fieldset,img{border:0}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}
+ol,ul{list-style:none}
+caption,th{text-align:left}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+abbr,acronym{border:0;font-variant:normal}
+sup{vertical-align:text-top}
+sub{vertical-align:text-bottom}
+ins{text-decoration: none;}
+input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;*font-size:100%}
+legend{color:#000}
+a{text-decoration: none;color: #555;}
+table{
+    width: 100%;
+}
+html,body{
+    overflow-x: hidden;
+}
+.clearf{
+    clear:both;
+}
+.none{
+    display:none!important;
+}
+table>thead th,
+table>tbody>tr>td,
+table{
+    /*border: 1px solid #dde3e9;*/
+}
+table>thead{
+    background-color:#e6f0f8;
+}
+table tr>th,
+table tr>td{
+    /*line-height: 40px;*/
+    line-height: 1.2;
+    padding: 10px 0;
+    box-sizing: border-box;
+}
+table tr>th:nth-child(1){
+    padding-left:15px;
+    text-align:left;
+}
+table tr>td:nth-child(1){
+    padding-left:15px;
+    text-align:left;
+
+}
+table tr>td:last-child{
+    padding-right:15px;
+    text-align:right;
+    min-width:80px;
+}
+table>tbody>tr:nth-child(2n){
+    background-color: #f5f8fb;
+}
+/*业务统计样式*/
+.busStatic-wrap{
+    width:100%;
+}
+.busStatic-wrap .bus-sea_row{
+    height:35px;
+    box-sizing:border-box;
+    border-bottom:1px solid #bcbcbc;
+    padding:0 15px;
+    background-color: #fff;
+}
+.bus-sea_row .seach-txt{
+    font-family: PingFangSC-Regular;
+    font-size: 12px;
+    font-weight: normal;
+    color: #14477c;
+    background: url(images/searchGray.png) no-repeat left center;
+    background-size: 18px 17px;
+    padding-left: 23px;
+    height: 20px;
+    display: inline-block;
+    margin-top: 7px;
+    line-height: 20px;
+}
+.bus-sea_row b{
+    width:10px;
+    height:20px;
+    float:right;
+    margin-top:7px;
+    background:url("images/rowRb.png")  no-repeat right center;
+    background-size:10px 20px;
+}
+.busStatic-wrap .bus-sta_nav{
+    height:40px;
+    background-color: #ffffff;
+    border-bottom:1px solid #bcbcbc;
+    padding:0 15px;
+    display:flex;
+    position:relative;
+}
+.bus-sta_nav .bus_nav_cell{
+    flex:1;
+    text-align:center;
+    height:40px;
+}
+
+.bus_nav_cell a{
+    width:40px;
+    display:inline-block;
+    height:36px;
+    line-height:36px;
+    font-size:12px;
+    color:#999;
+    box-sizing:border-box;
+}
+.bus_nav_cell.active  a{
+    color:#333;
+    font-weight:bold;
+}
+.bus_nav_active{
+    width: 40px;
+    height: 2px;
+    background-color: #14477c;
+    border-radius: 2px;
+    position:absolute;
+    bottom:-1px;
+    transition: 0.3s;
+    -moz-transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+
+.bus-sta_con{
+    width:100%;
+}
+.chart-Panel{
+    height:auto;
+    background-color: #ffffff;
+    box-shadow: 0px 6px 9px 0px rgba(162, 194, 226, 0.5);
+    margin-bottom:10px;
+    padding:0 15px;
+    position:relative;
+}
+.echarts-pie{
+    width:100%;
+    height:210px;
+    background-color:#fff;
+}
+.echarts-bar{
+    width:100%;
+    height:200px;
+    /*height:175px;*/
+    background-color:#fff;
+}
+.chart-Panel .echarts-tit{
+    position:absolute;
+    width:120px;
+    height:auto;
+    top:5px;
+    left:15px;
+}
+.echarts-tit h3{
+    font-weight:bold;
+    font-size:14px;
+    line-height:16px;
+    color: #1c6abc;
+    margin-bottom: 2px;
+    position: relative;
+}
+.echarts-tit h3:after{
+    content: url(tit_row.svg);
+    position: absolute;
+    top: 4px;
+    margin-left: 2px;
+    width: 4px;
+    height: 4px;
+
+}
+.echarts-tit .e-tit_row{
+    color: #fc3f3f;
+    font-size:12px;
+    line-height:14px;
+}
+.e-tit_row span{
+ padding-left:5px;
+}
+.pro_dep_wrap{
+    width:100%;
+    background-color:#fff;
+    margin:10px 0;
+}
+.pro_dep_wrap .bus_nav_cell a{
+    width:60px;
+}
+.pro_dep_wrap .bus_nav_active{
+    width:60px;
+}
+
+

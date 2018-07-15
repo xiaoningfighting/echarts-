@@ -1,0 +1,70 @@
+<html>
+<head>
+	<title>echarts图表DEMO</title>
+	<meta charset="UTF-8">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="jquery-1.8.3.min.js"></script>
+	 <script src="echarts.js"></script>
+</head>
+<body style="background-color:#f0f0f0;">
+   <!--  业务统计模块 -->
+    <div class="busStatic-wrap">
+        <!--顶部导航区域 -->
+        <div class="bus-sta_nav">
+            <div class="bus_nav_cell active"><a >面审量</a></div>
+            <div class="bus_nav_cell"><a >下户量</a></div>
+            <div class="bus_nav_cell"><a >签约量</a></div>
+            <div class="bus_nav_cell"><a >放款量</a></div>
+            <div class="bus_nav_cell"><a >违约量</a></div>
+            <span class="bus_nav_active"></span>
+        </div>
+        <!--业务统计数据 -->
+        <div class="bus-sta_con" >
+            <!--父级饼图 机构个人 -->
+            <div class="chart-Panel">
+            	<!-- 饼图 -->
+                <div class="echarts-pie" id="ordersPieChart"></div>
+                <div class="echarts-tit">
+                    <h3>日总和</h3>
+                        <div class="e-tit_row">
+                            <label >单数</label> <span>12单</span>
+                        </div>
+                        <div class="e-tit_row">
+                        <label >金额</label> <span>130万</span>
+                    </div>
+                </div>
+            </div>  <!--父级饼图 end -->
+            <!--产品 部门统计 -->
+            <div class="pro_dep_wrap">
+                <!--顶部导航区域 -->
+                <div class="bus-sta_nav">
+                    <div class="bus_nav_cell active"><a >产品统计</a></div>
+                    <div class="bus_nav_cell"><a >部门统计</a></div>
+                    <span class="bus_nav_active"></span>
+                </div>
+                <div class="chart-Panel">
+
+                	<!-- 柱图折线图 -->
+                    <div class="echarts-bar" id="proBarChart"></div>
+                    <div class="echarts-tit">
+                        <h3>机构</h3>
+                    </div>
+                </div>
+                    <!--部门统计 -->
+                <div class="chart-Panel none">
+                        <div class="echarts-bar" id="proPieChart"></div>
+                        <div class="echarts-tit">
+                            <h3>机构</h3>
+                        </div>
+                </div>
+
+            </div>
+         
+        </div>
+    </div>
+    <script src="echartsDemo.js"></script>
+</body>
+</html>
